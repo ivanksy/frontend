@@ -1,0 +1,70 @@
+!!!5
+%html{class:"no-js", lang:"es"}
+	%head
+		%meta{charset:"utf-8"}
+		%title Tareas Premium - El sitio de Tareas
+		%meta{name:"description",content:"¡Textos de todo tipo!."}
+		%link{href:'https://fonts.googleapis.com/css?family=Miriam+Libre:400,700', rel:'stylesheet', type:'text/css'}
+		%link{rel:"stylesheet",href:"css/bootstrap.css"}
+		%link{rel:"stylesheet", href:"css/bootstrap.min.css"}
+		%link{rel:"stylesheet", href:"css/normalize.css"}
+		%link{rel:"stylesheet", href:"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css"}
+		%link{rel:"stylesheet", href:"css/style.css"}
+		%meta{name:"viewport", content:"width=device-width, initial-scale=1"}
+		%script{src:"js/vendor/modernizr-2.8.3.min.js"}
+	%body
+		="<!--[if lt IE 8]>"
+		%p{class:"browserupgrade"}
+		Estás usando un navegador
+		%strong desactualizado.
+		Por favor
+		%a{href:"http://browsehappy.com/"}
+		actualiza tu navegador
+		para una mejor experiencia
+		="<![endif]-->"
+		.video-container
+			%video{autoplay:true, loop:true, width:"100%",height:"100%",poster:"/video/snap.jpg"}
+				%source{src:"video/mp4/wor.mp4",typ:"video/mp4"}
+				%source{src:"video/webm/wor.webm",typ:"video/webm"}
+
+		.row.middle-xs.center-xs.relative.up
+			.col-xs-12
+				.box.white-text#logo
+					%img{src:"/img/pslogo.png",width:"150px"}
+					%h1.miriam.title.no-margin 
+						Tareas Premium
+
+			%nav.fixed.top.navigation.full-width.right
+				%ul.list-inline.black.large-padding.white-text.align-right#navigation
+					%li
+						%a Inicio
+					%li
+						%a Explorar
+					%li
+						%a Quiénes Somos
+					%li
+						%a Contacto
+					%li
+						%a.btn.btn-primary.btn-lg ¡Haz mi tarea!
+							
+		.absolute.black.large-padding.bottom.full-width.white-text.align-center.medium#description 
+			.row.middle-xs
+				.col-xs-7.col-sm-6.white-text.medium 
+					¡Tareas de 10!
+				.col-xs
+					.box
+						%nav.navigation.text-right
+							%ul.list-inline.large-padding.white-text#navigation-in-bottom
+								%li
+									%a Inicio
+								%li
+									%a Explorar
+								%li
+									%a Quiénes Somos
+								%li
+									%a Contacto
+								%li
+									%a.btn.btn-primary.btn-lg ¡Haz mi tarea!
+
+		
+	.full-height		
