@@ -4,8 +4,8 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+	 Base styles: opinionated defaults
+	 ========================================================================== */
 html {
   color: #222;
   font-size: 1em;
@@ -71,8 +71,8 @@ textarea {
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+	 Browser Upgrade Prompt
+	 ========================================================================== */
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -81,8 +81,8 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+	 Author's custom styles
+	 ========================================================================== */
 .video-container {
   height: 100%;
   width: 100%;
@@ -113,25 +113,27 @@ textarea {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.navigation li i {
-  padding: 5px 10px;
+.corner a {
   color: white;
-  cursor: text;
+  cursor: pointer;
 }
 
-.navigation li i:hover {
+.corner a:hover {
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+	 Helper classes
+	 ========================================================================== */
 /*
  * Hide visually and from screen readers
  */
-.medium, .navigation li a, .navigation li i {
+.medium, .navigation li a {
   font-size: 1.3em;
+}
+
+.medium2 {
+  font-size: 1.1em;
 }
 
 .large-padding {
@@ -144,6 +146,11 @@ textarea {
 
 .title {
   font-size: 4em;
+}
+
+.name-page {
+  font-size: 1em;
+  padding: 10px 15px;
 }
 
 .black {
@@ -183,7 +190,7 @@ textarea {
 }
 
 .left {
-  left: 1em;
+  left: 0em;
 }
 
 .right {
@@ -277,15 +284,15 @@ textarea {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+	 EXAMPLE Media Queries for Responsive Design.
+	 These examples override the primary ('mobile first') styles.
+	 Modify as content requires.
+	 ========================================================================== */
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+	 Print styles.
+	 Inlined to avoid the additional HTTP request:
+	 http://www.phpied.com/delay-loading-your-print-css/
+	 ========================================================================== */
 @media print {
   *,
   *:before,
@@ -295,7 +302,7 @@ textarea {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+																	 http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -310,9 +317,9 @@ textarea {
     content: " (" attr(title) ")";
   }
   /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+		 * Don't show links that are fragment identifiers,
+		 * or use the `javascript:` pseudo protocol
+		 */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
@@ -323,9 +330,9 @@ textarea {
     page-break-inside: avoid;
   }
   /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+		 * Printing Tables:
+		 * http://css-discuss.incutio.com/wiki/Printing_Tables
+		 */
   thead {
     display: table-header-group;
   }

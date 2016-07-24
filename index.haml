@@ -27,34 +27,41 @@
 				%source{src:"video/mp4/wor.mp4",typ:"video/mp4"}
 				%source{src:"video/webm/wor.webm",typ:"video/webm"}
 
-		.row.middle-xs.center-xs.relative.up
+		.row.relative.middle-xs.center-xs.up-
 			.col-xs-12
 				.box.white-text#logo
-					%img{src:"/img/pslogo.png",width:"150px"}
-					%h1.miriam.title.no-margin 
-						Tareas Premium
+					%img{src:"/img/pslogo.png", width:"130px"}
+						%h1.miriam.title.no-margin Tareas Premium
 
 			%nav.fixed.top.navigation.full-width.right
-				%ul.list-inline.black.large-padding.white-text.align-right#navigation
-					%li
-						%a Inicio
-					%li
-						%a Explorar
-					%li
-						%a Quiénes Somos
-					%li
-						%a Contacto
-					%li
-						%a.btn.btn-primary.btn-lg ¡Haz mi tarea!
-							
-		.absolute.black.large-padding.bottom.full-width.white-text.align-center.medium#description 
+				.col-md-4.left.large-padding.corner
+					.box.text-left
+						%a
+							%img{src:"/img/pslogo.png", width:"40px", align:"left", hspace:"10"}
+								%p.miriam.white-text.name-page
+									Tareas Premium
+				.col-md
+					%ul.list-inline.black.large-padding.white-text.align-right#navigation
+						%li
+							%a Inicio
+						%li
+							%a Explorar
+						%li
+							%a Quiénes Somos
+						%li
+							%a Contacto
+						%li
+							%a.btn.btn-primary.btn-lg ¡Haz mi tarea!
+								
+		.absolute.black.large-padding.bottom.full-width.white-text.text-center#description 
+			
 			.row.middle-xs
-				.col-xs-7.col-sm-6.white-text.medium 
+				.col-xs-7.col-sm-6.white-text.medium
 					¡Tareas de 10!
-				.col-xs
+				.col-sm-6
 					.box
 						%nav.navigation.text-right
-							%ul.list-inline.large-padding.white-text#navigation-in-bottom
+							%ul.list-inline.white-text#navigation-on-bottom
 								%li
 									%a Inicio
 								%li
