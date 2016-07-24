@@ -116,6 +116,10 @@ textarea {
 		}
 }
 .navigation{
+		nav{
+		ul{
+			margin-bottom: 0px;}
+	}
 		li{
 			a{
 				@extend .medium;
@@ -130,7 +134,8 @@ textarea {
 	}
 }
 .corner{
-	a{
+	a{		
+				margin-bottom: 0px;
 				color: white;
 				cursor: pointer;
 				&:hover{
@@ -139,6 +144,18 @@ textarea {
 	}
 }
 
+#description{
+	ul{
+		margin-bottom: 0px;
+	}
+	&.absolute{
+		bottom: 0px;
+	}
+	&.fixed{
+		top: 0px;
+
+	}
+}
 
 
 
@@ -176,7 +193,8 @@ textarea {
 	padding: 10px 15px;
 }
 .black{
-		background-color:rgba(0,0,0,0.7);
+	width: 100%;
+	background-color:rgba(0,0,0,0.7);
 }
 .white-text{
 		color: white;

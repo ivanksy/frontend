@@ -27,13 +27,13 @@
 				%source{src:"video/mp4/wor.mp4",typ:"video/mp4"}
 				%source{src:"video/webm/wor.webm",typ:"video/webm"}
 
-		.row.relative.middle-xs.center-xs.up-
+		.row.relative.middle-xs.center-xs.up
 			.col-xs-12
 				.box.white-text#logo
 					%img{src:"/img/pslogo.png", width:"130px"}
 						%h1.miriam.title.no-margin Tareas Premium
 
-			%nav.fixed.top.navigation.full-width.right
+			%nav.fixed.top.navigation.full-width.right.black#navigation
 				.col-md-2.left.large-padding.corner
 					.box.text-left
 						%a
@@ -41,7 +41,7 @@
 								%p.miriam.white-text.name-page
 									Tareas Premium
 				.col-md
-					%ul.list-inline.black.large-padding.white-text.align-right#navigation
+					%ul.list-inline.large-padding.white-text.align-right
 						%li
 							%a Inicio
 						%li
@@ -53,15 +53,15 @@
 						%li
 							%a.btn.btn-primary.btn-lg ¡Haz mi tarea!
 								
-		.absolute.black.large-padding.bottom.full-width.white-text.text-center#description 
+		.absolute.black.large-padding.full-width.white-text.text-center#description 
 			
-			.row.middle-xs
+			.row.middle-xs.center-xs
 				.col-xs-7.col-sm-6.white-text.medium
 					¡Tareas de 10!
-				.col-sm-6
+				.col-xs.hidden.navigation#sticky-navigation
 					.box
-						%nav.navigation.text-right
-							%ul.list-inline.white-text#navigation-on-bottom
+						%nav.text-right
+							%ul.list-inline.white-text
 								%li
 									%a Inicio
 								%li
@@ -74,4 +74,9 @@
 									%a.btn.btn-primary.btn-lg ¡Haz mi tarea!
 
 		
-	.full-height		
+	.full-height
+
+	%script{src:"https://code.jquery.com/jquery-3.1.0.min.js", integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}
+	%script
+		window.jQuery || document.write("<script src="/js/vendor/jquery-1.12.0.min.js"></script>")
+	%script{src:"/js/main.js"}

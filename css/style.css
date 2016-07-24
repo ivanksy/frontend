@@ -102,6 +102,10 @@ textarea {
   transform: translate(-50%, -50%);
 }
 
+.navigation nav ul {
+  margin-bottom: 0px;
+}
+
 .navigation li a {
   padding: 5px 10px;
   color: white;
@@ -114,12 +118,25 @@ textarea {
 }
 
 .corner a {
+  margin-bottom: 0px;
   color: white;
   cursor: pointer;
 }
 
 .corner a:hover {
   text-decoration: none;
+}
+
+#description ul {
+  margin-bottom: 0px;
+}
+
+#description.absolute {
+  bottom: 0px;
+}
+
+#description.fixed {
+  top: 0px;
 }
 
 /* ==========================================================================
@@ -154,6 +171,7 @@ textarea {
 }
 
 .black {
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
