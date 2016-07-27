@@ -179,6 +179,10 @@ textarea {
   color: white;
 }
 
+.black-text {
+  color: black;
+}
+
 .align-right {
   text-align: right;
 }
