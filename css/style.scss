@@ -116,10 +116,9 @@ textarea {
 		}
 }
 .navigation{
-		nav{
 		ul{
-			margin-bottom: 0px;}
-	}
+			margin-bottom: 0px;
+		}
 		li{
 			a{
 				@extend .medium;
@@ -135,15 +134,17 @@ textarea {
 }
 .corner{
 	a{		
-				margin-bottom: 0px;
-				color: white;
-				cursor: pointer;
-				&:hover{
-					text-decoration: none;
+		margin-bottom: 0px;
+		color: white;
+		cursor: pointer;
+		&:hover{
+			text-decoration: none;
 			}
 	}
 }
-
+#menu{ 
+	padding-top: 10px;
+}
 #description{
 	ul{
 		margin-bottom: 0px;
@@ -156,11 +157,6 @@ textarea {
 
 	}
 }
-
-
-
-
-
 
 
 
@@ -221,7 +217,7 @@ textarea {
 		bottom: 0px;
 }
 .top{
-		top: 1em;
+		top: 0em;
 }
 .left{
 		left: 0em;
@@ -246,6 +242,14 @@ textarea {
 .no-margin{
 		margin: 0px;
 }
+.box{
+	a{
+		p{
+			margin-bottom: 0px;
+		}
+	}
+}
+
 
 
 .hidden {

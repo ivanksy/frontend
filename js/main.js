@@ -40,6 +40,5 @@
 
 		return $(window).scrollTop() > $(window).height() - (descriptionHeight * 2)
 	}
-
-
+	
 })()

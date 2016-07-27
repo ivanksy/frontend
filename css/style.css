@@ -102,7 +102,7 @@ textarea {
   transform: translate(-50%, -50%);
 }
 
-.navigation nav ul {
+.navigation ul {
   margin-bottom: 0px;
 }
 
@@ -125,6 +125,10 @@ textarea {
 
 .corner a:hover {
   text-decoration: none;
+}
+
+#menu {
+  padding-top: 10px;
 }
 
 #description ul {
@@ -208,7 +212,7 @@ textarea {
 }
 
 .top {
-  top: 1em;
+  top: 0em;
 }
 
 .left {
@@ -239,6 +243,10 @@ textarea {
 
 .no-margin {
   margin: 0px;
+}
+
+.box a p {
+  margin-bottom: 0px;
 }
 
 .hidden {
