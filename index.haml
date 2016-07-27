@@ -1,3 +1,5 @@
+-gallery_images = ["slider_1.jpg","slider_2.jpg","slider_3.jpg","slider_4.jpg"]
+
 !!!5
 %html{class:"no-js", lang:"es"}
 	%head
@@ -102,6 +104,11 @@
 							%p Aquí viene la descripción del Título 3
 							%p
 								%a.btn.btn-primary Más información
+
+	#gallery
+		-gallery_images.each do |image|
+			.image{style:"backgroud-image:url(/img/slider/#{image});height:200px;"}
+
 
 	%script{src:"https://code.jquery.com/jquery-3.1.0.min.js", integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}
 	:javascript
