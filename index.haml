@@ -1,4 +1,4 @@
--gallery_images = ["slider_1.jpg","slider_2.jpg","slider_3.jpg","slider_4.jpg"]
+-gallery_image = ["slider_1","slider_2","slider_3","slider_4"]
 
 !!!5
 %html{class:"no-js", lang:"es"}
@@ -14,8 +14,9 @@
 		%link{rel:"stylesheet", href:"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css"}
 		%link{rel:"stylesheet", href:"css/style.css"}
 		%meta{name:"viewport", content:"width=device-width, initial-scale=1"}
+		%meta{:"data-name" => "image-counter", content:"#{gallery_image.size - 1}"}
 		%script{src:"js/vendor/modernizr-2.8.3.min.js"}
-	%body
+	%body.background-color
 		="<!--[if lt IE 8]>"
 		%p{class:"browserupgrade"}
 		Estás usando un navegador
@@ -81,7 +82,7 @@
 	.text-center#menu
 		.row
 			.col-md-4.col-lg-4.col-sm-4.col-xs-12
-				.thumbnail.top
+				.thumbnail
 					%img{src:"/img/thumbnail/thumbnail.svg",alt:"Hola"}
 						.caption
 							%h3 Título 1
@@ -104,10 +105,10 @@
 							%p Aquí viene la descripción del Título 3
 							%p
 								%a.btn.btn-primary Más información
-
-	#gallery
-		-gallery_images.each do |image|
-			.image{style:"backgroud-image:url(/img/slider/#{image});height:200px;"}
+		#gallery
+			.inner
+				-gallery_image.each do |image|
+					.image{style:"background-image:url(img/slider/#{image}.jpg);"}
 
 
 	%script{src:"https://code.jquery.com/jquery-3.1.0.min.js", integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}
