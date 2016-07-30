@@ -40,10 +40,10 @@
 
 			%nav.fixed.top.navigation.full-width.right.black#navigation
 				.col-md-2.left.large-padding.corner
-					.box.text-left
+					.text-left
 						%a
 							%img{src:"/img/pslogo.png", width:"40px", align:"left", hspace:"10"}
-								%p.miriam.white-text.name-page
+								%p.miriam.white-text.name-page.medium
 									Tareas Premium
 				.col-md
 					%ul.list-inline.large-padding.white-text.align-right
@@ -83,7 +83,7 @@
 		.row
 			.col-md-4.col-lg-4.col-sm-4.col-xs-12.relative
 				.thumbnail
-					%img{src:"/img/thumbnail/thumbnail.svg",alt:"Hola"}
+					%img{src:"/img/thumbnail/thumbnail.svg",alt:"Thumbnail"}
 						.caption
 							%h3 Título 1
 							%p Aquí viene la descripción del Título 1
@@ -91,7 +91,7 @@
 								%a.btn.btn-primary Más información
 			.col-md-4.col-lg-4.col-sm-4.col-xs-12
 				.thumbnail
-					%img{src:"/img/thumbnail/thumbnail.svg",alt:"Hola"}
+					%img{src:"/img/thumbnail/thumbnail.svg",alt:"Thumbnail"}
 						.caption
 							%h3 Título 2
 							%p Aquí viene la descripción del Título 2
@@ -99,7 +99,7 @@
 								%a.btn.btn-primary Más información
 			.col-md-4.col-lg-4.col-sm-4.col-xs-12
 				.thumbnail
-					%img{src:"/img/thumbnail/thumbnail.svg",alt:"Hola"}
+					%img{src:"/img/thumbnail/thumbnail.svg",alt:"Thumbnail"}
 						.caption
 							%h3 Título 3
 							%p Aquí viene la descripción del Título 3
@@ -120,6 +120,23 @@
 				%p.top-space
 					This is a simple paragraph, wich contains crap information written by the crap developer for use it as example paragraph. This is a simple paragraph, wich contains crap information written by the crap developer for use it as example paragraph.
 					%strong.miriam.medium -Dev. Ivanksy
+	
+	.black-row.white-text.full-height#contact
+		.row.middle-xs.full-height
+			.col-xs-12
+				.box
+					%form{action:"",method:"POST"}
+						.row.center-xs
+							.col-xs-2.col-md-1
+								.box
+							.col-xs-5
+								.box
+									%p.miriam.white-text
+										Contacto	
+									%input{type:"text",name:"name",placeholder: "Nombre"}
+									%input{type:"email",name:"email",placeholder: "Correo"}
+									%textarea{name:"body",placeholder:"Escribe tu mensaje"}
+	
 	%script{src:"https://code.jquery.com/jquery-3.1.0.min.js", integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}
 	:javascript
 		window.jQuery || document.write("<script src='/js/vendor/jquery-1.12.0.min.js'><\/script>");
