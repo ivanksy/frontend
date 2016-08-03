@@ -1,11 +1,11 @@
--gallery_image = ["slider_1","slider_2","slider_3","slider_4"]
+-gallery_image = ["slider_1","slider_2","slider_3"]
 
 !!!5
 %html{class:"no-js", lang:"es"}
 	%head
 		%meta{charset:"utf-8"}
-		%title ¡El Sitio de Tareas! - Tareas Premium
-		%meta{name:"description",content:"¡Textos de todo tipo!."}
+		%title 24/7 Online Custom Essay Writing Service
+		%meta{name:"description",content:"Essay Writing Service"}
 		%link{rel:"shortcut icon",href:"img/favicon.ico"}
 		%link{href:'https://fonts.googleapis.com/css?family=Miriam+Libre:400,700', rel:'stylesheet', type:'text/css'}
 		%link{rel:"stylesheet",href:"css/bootstrap.css"}
@@ -32,33 +32,31 @@
 				%source{src:"video/mp4/wor.mp4",typ:"video/mp4"}
 				%source{src:"video/webm/wor.webm",typ:"video/webm"}
 
-		.row.relative.middle-xs.center-xs.up#home
+		.row.relative.middle-xs.center-xs#home
 			.col-xs-12
-				.box.white-text#logo
-					%img{src:"/img/pslogo.png", width:"130px"}
-						%h1.miriam.title.no-margin Tareas Premium
+				.box.white-text.black-row#logo
+					%img{src:"/img/logo.png", width:"140px"}
+						%h1.miriam.title.no-margin My Essay Written
+						%p.miriam.subtitle.no-margin.gray-text Essay Writing Service
 
-			%nav.fixed.top.navigation.full-width.right.black#navigation
+			%nav.fixed.top.navigation.full-width.right.black.center-xs#navigation
 				.col-md-2.left.large-padding.corner
-					.text-left
-						%a
-							%img{src:"/img/pslogo.png", width:"40px", align:"left", hspace:"10"}
-								%p.miriam.white-text.name-page.medium
-									Tareas Premium
+					%a
+						%img{src:"/img/logo_navbar.png", width:"100%", align:"left", hspace:"10"}
 				.col-md
 					%ul.list-inline.large-padding.white-text.align-right
 						%li
-							%a Inicio
+							%a Home
 						%li
-							%a Explorar
+							%a About Us
 						%li
-							%a Quiénes Somos
+							%a F.A.Q.
 						%li
-							%a Contacto
+							%a Our Rates
 						%li
-							%a.btn.btn-primary.btn-lg ¡Haz mi tarea!
+							%a.btn.btn-primary.btn-lg ¡Order Now!
 								
-		.absolute.black.large-padding.full-width.white-text.text-center#description 
+		.absolute.black.large-padding.full-width.white-text.text-center.hidden#description 
 			
 			.row.middle-xs.center-xs
 				.col-xs-7.col-sm-6.white-text.medium
@@ -68,58 +66,31 @@
 						%nav.text-right
 							%ul.list-inline.white-text
 								%li
-									%a Inicio
+									%a Home
 								%li
-									%a Explorar
+									%a About Us
 								%li
-									%a Quiénes Somos
+									%a F.A.Q.
 								%li
-									%a Contacto
+									%a Our Rates
 								%li
-									%a.btn.btn-primary.btn-lg ¡Haz mi tarea!
+									%a.btn.btn-primary.btn-lg ¡Order Now!
+		.container
+			.card.white.black-text.text-center.relative.up
+				%h3.medium.slim
+					Get your
+					%strong.miriam.medium Essay
+					written 
+					%strong overnight!
+					%p.top-space
+					Native English-speaking writers are here to complete all your writing assignments: academic essays, term papers & theses and more...
 
-		
-	.text-center#menu
-		.row
-			.col-md-4.col-lg-4.col-sm-4.col-xs-12.relative
-				.thumbnail
-					%img{src:"/img/thumbnail/thumbnail.svg",alt:"Thumbnail"}
-						.caption
-							%h3 Título 1
-							%p Aquí viene la descripción del Título 1
-							%p
-								%a.btn.btn-primary Más información
-			.col-md-4.col-lg-4.col-sm-4.col-xs-12
-				.thumbnail
-					%img{src:"/img/thumbnail/thumbnail.svg",alt:"Thumbnail"}
-						.caption
-							%h3 Título 2
-							%p Aquí viene la descripción del Título 2
-							%p
-								%a.btn.btn-primary Más información
-			.col-md-4.col-lg-4.col-sm-4.col-xs-12
-				.thumbnail
-					%img{src:"/img/thumbnail/thumbnail.svg",alt:"Thumbnail"}
-						.caption
-							%h3 Título 3
-							%p Aquí viene la descripción del Título 3
-							%p
-								%a.btn.btn-primary Más información
+		%img.full-width#banner{src:"/img/banner.jpg"}
+
 		#gallery
 			.inner
 				-gallery_image.each do |image|
 					.image{style:"background-image:url(img/slider/#{image}.jpg);"}
-		
-		.container
-			.card.white.black-text.text-center.relative
-				%h3.medium.slim
-					En
-					%strong.miriam.medium Textos Premium
-					escribimos lo que tú deberías de escribir pero con
-					%strong.miriam.medium calidad.
-				%p.top-space
-					This is a simple paragraph, wich contains crap information written by the crap developer for use it as example paragraph. This is a simple paragraph, wich contains crap information written by the crap developer for use it as example paragraph.
-					%strong.miriam.medium -Dev. Ivanksy
 	
 	.black-row.white-text.full-height#contact
 		.row.middle-xs.full-height
@@ -136,7 +107,7 @@
 									%input.step{type:"text",name:"name",placeholder: "Nombre", class:"input", required: true}
 									%input.step{type:"email",name:"email",placeholder: "Correo", class:"input", required: true}
 									%textarea.step{name:"body",placeholder:"Escribe tu mensaje", class:"input", required: true}
-									%button{type:"submit",class:"btn"} Enviar
+									%button.black-text{type:"submit",class:"btn"} Enviar
 
 	
 	%script{src:"https://code.jquery.com/jquery-3.1.0.min.js", integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}

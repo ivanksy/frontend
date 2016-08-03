@@ -127,6 +127,16 @@ textarea {
   text-decoration: none;
 }
 
+#home {
+  border-radius: 100%;
+}
+
+#logo {
+  padding: 15px;
+  margin: 350px;
+  border-radius: 10px;
+}
+
 #menu {
   padding-top: 10px;
 }
@@ -148,7 +158,8 @@ textarea {
 }
 
 #gallery {
-  width: 100%;
+  margin: auto;
+  width: 800px;
   overflow-x: hidden;
 }
 
@@ -162,19 +173,30 @@ textarea {
 #gallery .image {
   display: inline-block;
   margin-right: -4px;
-  height: 100vh;
-  width: 100%;
+  margin-top: 0px;
+  height: 800px;
+  width: 800px;
   background-size: cover;
   background-position: center;
 }
 
+#banner {
+  margin-top: -7.5%;
+  margin-bottom: -7.5%;
+}
+
 .container .card {
   padding: 2em;
-  margin-top: -100px;
+  margin-top: -7.5%;
+  margin-bottom: -10%;
 }
 
 #contact {
   margin-top: -100px;
+}
+
+#contact form {
+  margin: auto;
 }
 
 input, textarea {
@@ -214,7 +236,11 @@ input, textarea {
 }
 
 .title {
-  font-size: 4em;
+  font-size: 3em;
+}
+
+.subtitle {
+  font-size: 1em;
 }
 
 .name-page {
@@ -253,6 +279,10 @@ input, textarea {
 
 .black-text {
   color: black;
+}
+
+.gray-text {
+  color: gray;
 }
 
 .align-right {
