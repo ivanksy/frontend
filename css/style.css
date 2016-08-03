@@ -172,10 +172,12 @@ textarea {
   padding: 2em;
   margin-top: -100px;
 }
-#contact{
+
+#contact {
   margin-top: -100px;
 }
-input, textarea{
+
+input, textarea {
   font-size: 2em;
   padding: 0.5em;
   border: none;
@@ -184,7 +186,8 @@ input, textarea{
   background-color: transparent;
   width: 100%;
 }
-.box p{
+
+.box p {
   font-size: 2em;
 }
 
@@ -197,6 +200,7 @@ input, textarea{
 .medium, .navigation li a {
   font-size: 1.3em;
 }
+
 .medium2 {
   font-size: 1.1em;
 }
@@ -225,9 +229,11 @@ input, textarea{
 .card {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-.black-row{
+
+.black-row {
   background-color: rgba(0, 0, 0, 0.7);
 }
+
 .black {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
