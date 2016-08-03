@@ -1,0 +1,1 @@
+"use strict";!function(){function n(){return document.querySelector(e).checkValidity()}function t(){if(n());else{var t=$(e).find(".input:invalid").first().parent();i(t)}}function i(n){n.focus()}var e="#contact-form";$(e).find(".input").on("change",function(n){var e=$(n.target),o=e.next(".step");console.log(o.length),o.length>0?i(o):(console.log("Hola2"),t())})}();

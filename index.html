@@ -172,7 +172,7 @@
     <div class='row middle-xs full-height'>
       <div class='col-xs-12'>
         <div class='box'>
-          <form action='' method='POST'>
+          <form action='https://formspree.io/ivan.nieto.lozada@gmail.com' id='contact-form' method='POST'>
             <div class='row center-xs'>
               <div class='col-xs-2 col-md-1'>
                 <div class='box'></div>
@@ -182,9 +182,10 @@
                   <p class='miriam white-text'>
                     Contacto
                   </p>
-                  <input name='name' placeholder='Nombre' type='text'>
-                  <input name='email' placeholder='Correo' type='email'>
-                  <textarea name='body' placeholder='Escribe tu mensaje'></textarea>
+                  <input class='input step' name='name' placeholder='Nombre' required type='text'>
+                  <input class='input step' name='email' placeholder='Correo' required type='email'>
+                  <textarea class='input step' name='body' placeholder='Escribe tu mensaje' required></textarea>
+                  <button class='btn' type='submit'>Enviar</button>
                 </div>
               </div>
             </div>
@@ -198,4 +199,6 @@
     window.jQuery || document.write("<script src='/js/vendor/jquery-1.12.0.min.js'><\/script>");
   </script>
   <script src='js/main.js'></script>
+  <script src='js/form_object.js'></script>
+  <script src='dist/steps.js'></script>
 </html>

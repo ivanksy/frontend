@@ -125,7 +125,7 @@
 		.row.middle-xs.full-height
 			.col-xs-12
 				.box
-					%form{action:"",method:"POST"}
+					%form{action:"https://formspree.io/ivan.nieto.lozada@gmail.com",method:"POST",id:"contact-form"}
 						.row.center-xs
 							.col-xs-2.col-md-1
 								.box
@@ -133,11 +133,15 @@
 								.box
 									%p.miriam.white-text
 										Contacto	
-									%input{type:"text",name:"name",placeholder: "Nombre"}
-									%input{type:"email",name:"email",placeholder: "Correo"}
-									%textarea{name:"body",placeholder:"Escribe tu mensaje"}
+									%input.step{type:"text",name:"name",placeholder: "Nombre", class:"input", required: true}
+									%input.step{type:"email",name:"email",placeholder: "Correo", class:"input", required: true}
+									%textarea.step{name:"body",placeholder:"Escribe tu mensaje", class:"input", required: true}
+									%button{type:"submit",class:"btn"} Enviar
+
 	
 	%script{src:"https://code.jquery.com/jquery-3.1.0.min.js", integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}
 	:javascript
 		window.jQuery || document.write("<script src='/js/vendor/jquery-1.12.0.min.js'><\/script>");
 	%script{src:"js/main.js"}
+	%script{src:"js/form_object.js"}
+	%script{src:"dist/steps.js"}
