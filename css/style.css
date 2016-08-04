@@ -14,6 +14,7 @@ html {
 
 html, body {
   height: 100%;
+  width: 100%;
 }
 
 /*
@@ -93,13 +94,17 @@ textarea {
 .video-container video {
   min-width: 100%;
   min-height: 100%;
-  width: auto;
+  width: 80%;
   height: auto;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.navigation {
+  z-index: 11;
 }
 
 .navigation ul {
@@ -115,6 +120,18 @@ textarea {
 .navigation li a:hover {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navigation a {
+  cursor: pointer;
+}
+
+.navigation a img {
+  margin-right: 0;
+}
+
+.navigation a p {
+  width: 227px;
 }
 
 .corner a {
@@ -213,6 +230,10 @@ input, textarea {
   font-size: 2em;
 }
 
+body {
+  width: auto;
+}
+
 /* ==========================================================================
 	 Helper classes
 	 ========================================================================== */
@@ -249,7 +270,7 @@ input, textarea {
 }
 
 .background-color {
-  background-color: #f5f5f5;
+  background-color: #5698bf;
 }
 
 .card {

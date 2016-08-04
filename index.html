@@ -4,6 +4,7 @@
     <meta charset='utf-8'>
     <title>24/7 Online Custom Essay Writing Service</title>
     <meta content='Essay Writing Service' name='description'>
+    <meta content='width=device-width, initial-scale:1, maximum-scale:1' name='viewport'>
     <link href='img/favicon.ico' rel='shortcut icon'>
     <link href='https://fonts.googleapis.com/css?family=Miriam+Libre:400,700' rel='stylesheet' type='text/css'>
     <link href='css/bootstrap.css' rel='stylesheet'>
@@ -11,7 +12,6 @@
     <link href='css/normalize.css' rel='stylesheet'>
     <link href='https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css' rel='stylesheet'>
     <link href='css/style.css' rel='stylesheet'>
-    <meta content='width=device-width, initial-scale=1' name='viewport'>
     <meta content='2' data-name='image-counter'>
     <script src='js/vendor/modernizr-2.8.3.min.js'></script>
   </head>
@@ -25,26 +25,29 @@
     actualiza tu navegador
     para una mejor experiencia
     <![endif]-->
-    <div class='video-container'>
-      <video autoplay height='100%' loop poster='/video/snap.jpg' width='100%'>
+    <div class='video-container relative'>
+      <video autoplay height='100%' loop poster='/img/banner.png'>
         <source src='video/mp4/wor.mp4' typ='video/mp4'>
         <source src='video/webm/wor.webm' typ='video/webm'>
       </video>
     </div>
-    <div class='row relative middle-xs center-xs' id='home'>
-      <div class='col-xs-12'>
-        <div class='box white-text black-row' id='logo'>
-          <img src='/img/logo.png' width='140px'>
-            <h1 class='miriam title no-margin'>My Essay Written</h1>
-            <p class='miriam subtitle no-margin gray-text'>Essay Writing Service</p>
-          </img>
-        </div>
-      </div>
-      <nav class='fixed top navigation full-width right black center-xs' id='navigation'>
+    <div class='fixed top navigation full-width right black' id='navigation'>
+      <div class='row middle-xs'>
         <div class='col-md-2 left large-padding corner'>
-          <a>
-            <img align='left' hspace='10' src='/img/logo_navbar.png' width='100%'>
-          </a>
+          <table>
+            <tr>
+              <td>
+                <a>
+                  <img src='/img/logo_navbar.png' width='65em'>
+                </a>
+              </td>
+              <th>
+                <a>
+                  <p class='miriam white-text'>Your Essay Written</p>
+                </a>
+              </th>
+            </tr>
+          </table>
         </div>
         <div class='col-md'>
           <ul class='list-inline large-padding white-text align-right'>
@@ -65,36 +68,6 @@
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
-    <div class='absolute black large-padding full-width white-text text-center hidden' id='description'>
-      <div class='row middle-xs center-xs'>
-        <div class='col-xs-7 col-sm-6 white-text medium'>
-          ¡Tareas de 10!
-        </div>
-        <div class='col-xs hidden navigation' id='sticky-navigation'>
-          <div class='box'>
-            <nav class='text-right'>
-              <ul class='list-inline white-text'>
-                <li>
-                  <a>Home</a>
-                </li>
-                <li>
-                  <a>About Us</a>
-                </li>
-                <li>
-                  <a>F.A.Q.</a>
-                </li>
-                <li>
-                  <a>Our Rates</a>
-                </li>
-                <li>
-                  <a class='btn btn-primary btn-lg'>¡Order Now!</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
       </div>
     </div>
     <div class='container'>
@@ -109,7 +82,6 @@
         </h3>
       </div>
     </div>
-    <img class='full-width' id='banner' src='/img/banner.jpg'>
     <div id='gallery'>
       <div class='inner'>
         <div class='image' style='background-image:url(img/slider/slider_1.jpg);'></div>
@@ -117,33 +89,33 @@
         <div class='image' style='background-image:url(img/slider/slider_3.jpg);'></div>
       </div>
     </div>
-  </body>
-  <div class='black-row white-text full-height' id='contact'>
-    <div class='row middle-xs full-height'>
-      <div class='col-xs-12'>
-        <div class='box'>
-          <form action='https://formspree.io/ivan.nieto.lozada@gmail.com' id='contact-form' method='POST'>
-            <div class='row center-xs'>
-              <div class='col-xs-2 col-md-1'>
-                <div class='box'></div>
-              </div>
-              <div class='col-xs-5'>
-                <div class='box'>
-                  <p class='miriam white-text'>
-                    Contacto
-                  </p>
-                  <input class='input step' name='name' placeholder='Nombre' required type='text'>
-                  <input class='input step' name='email' placeholder='Correo' required type='email'>
-                  <textarea class='input step' name='body' placeholder='Escribe tu mensaje' required></textarea>
-                  <button class='black-text btn' type='submit'>Enviar</button>
+    <div class='black-row white-text full-height' id='contact'>
+      <div class='row middle-xs full-height'>
+        <div class='col-xs-12'>
+          <div class='box'>
+            <form action='https://formspree.io/ivan.nieto.lozada@gmail.com' id='contact-form' method='POST'>
+              <div class='row center-xs'>
+                <div class='col-xs-2 col-md-1'>
+                  <div class='box'></div>
+                </div>
+                <div class='col-xs-5'>
+                  <div class='box'>
+                    <p class='miriam white-text'>
+                      Contacto
+                    </p>
+                    <input class='input step' name='name' placeholder='Nombre' required type='text'>
+                    <input class='input step' name='email' placeholder='Correo' required type='email'>
+                    <textarea class='input step' name='body' placeholder='Escribe tu mensaje' required></textarea>
+                    <button class='black-text btn' type='submit'>Enviar</button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </body>
   <script crossorigin='anonymous' integrity='sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=' src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
   <script>
     window.jQuery || document.write("<script src='/js/vendor/jquery-1.12.0.min.js'><\/script>");

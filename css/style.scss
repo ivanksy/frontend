@@ -12,10 +12,12 @@ html {
 		color: #222;
 		font-size: 1em;
 		line-height: 1.4;
+		
 }
 
 html,body{
 		height: 100%;
+		width: 100%;
 }
 
 /*
@@ -104,7 +106,7 @@ textarea {
 				min-height: 100%;
 
 				// ajustar al navegador
-				width:auto;
+				width:80%;
 				height:auto;
 
 				// centrar video
@@ -132,6 +134,16 @@ textarea {
 			}
 		}
 	}
+	a{
+		cursor: pointer;
+		img{
+			margin-right: 0;
+		}
+		p{
+			width: 227px;
+		}
+	}
+	z-index: 11;
 }
 .corner{
 	a{      
@@ -223,7 +235,9 @@ input, textarea{
 		font-size: 2em;
 	}
 }
-
+body{
+	width: auto;
+}
 
 /* ==========================================================================
 	 Helper classes
@@ -242,6 +256,7 @@ input, textarea{
 .large-padding{
 		padding: 10px 15px;
 }
+
 .miriam{
 		font-family: 'Miriam Libre', sans-serif;
 }
@@ -256,7 +271,7 @@ input, textarea{
 	padding: 10px 15px;
 }
 .background-color{
-	background-color: #f5f5f5;
+	background-color: #5698bf;
 }
 .card{
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);

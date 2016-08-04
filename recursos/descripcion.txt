@@ -1,0 +1,18 @@
+.absolute.black.large-padding.full-width.white-text.text-center.hidden#description 
+			.row.middle-xs.center-xs
+				.col-xs-7.col-sm-6.white-text.medium
+					¡Tareas de 10!
+				.col-xs.hidden.navigation#sticky-navigation
+					.box
+						%nav.text-right
+							%ul.list-inline.white-text
+								%li
+									%a Home
+								%li
+									%a About Us
+								%li
+									%a F.A.Q.
+								%li
+									%a Our Rates
+								%li
+									%a.btn.btn-primary.btn-lg ¡Order Now!
