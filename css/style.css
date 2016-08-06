@@ -85,8 +85,6 @@ textarea {
 	 Author's custom styles
 	 ========================================================================== */
 .video-container {
-  height: 100%;
-  width: 100%;
   overflow: hidden;
   position: absolute;
 }
@@ -197,15 +195,21 @@ textarea {
   background-position: center;
 }
 
-#banner {
-  margin-top: -7.5%;
-  margin-bottom: -7.5%;
+.top-banner {
+  top: 370px;
+}
+
+.banner {
+  position: absolute;
+  height: 512px;
+  background-size: cover;
+  background-position: center;
 }
 
 .container .card {
   padding: 2em;
   margin-top: -7.5%;
-  margin-bottom: -10%;
+  margin-bottom: -8%;
 }
 
 #contact {
@@ -214,6 +218,10 @@ textarea {
 
 #contact form {
   margin: auto;
+}
+
+#contact .box p {
+  font-size: 2em;
 }
 
 input, textarea {
@@ -226,12 +234,16 @@ input, textarea {
   width: 100%;
 }
 
-.box p {
-  font-size: 2em;
-}
-
 body {
   width: auto;
+}
+
+.more-height {
+  height: 136%;
+}
+
+#menu-opener {
+  display: none;
 }
 
 /* ==========================================================================
@@ -240,6 +252,10 @@ body {
 /*
  * Hide visually and from screen readers
  */
+.margin-auto {
+  margin: auto;
+}
+
 .medium, .navigation li a {
   font-size: 1.3em;
 }
@@ -275,6 +291,10 @@ body {
 
 .card {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.purple-row {
+  background-color: rgba(72, 51, 93, 0.7);
 }
 
 .black-row {
@@ -350,17 +370,15 @@ body {
   margin-top: 2em;
 }
 
+.bottom-space {
+  margin-bottom: 1em;
+}
+
 .full-height {
   height: 100%;
 }
 
 .full-width {
-  width: 100%;
-}
-
-.row {
-  margin: 0;
-  height: 100%;
   width: 100%;
 }
 
@@ -441,6 +459,35 @@ body {
 	 These examples override the primary ('mobile first') styles.
 	 Modify as content requires.
 	 ========================================================================== */
+@media only screen and (max-width: 960px) {
+  #navigation p {
+    font-size: 1.5em;
+  }
+  #menu-opener {
+    display: block;
+    margin-right: 10px;
+  }
+  #responsive-nav ul {
+    position: absolute;
+    width: 100%;
+    font-size: 1.5em;
+    top: 95px;
+    background-color: #222;
+    left: 0px;
+    text-align: center;
+    display: none;
+  }
+  #responsive-nav ul.active {
+    display: block;
+    max-height: 80vh;
+  }
+  #responsive-nav ul li {
+    display: block;
+    margin-top: 1em;
+    padding: 10px 15px;
+  }
+}
+
 /* ==========================================================================
 	 Print styles.
 	 Inlined to avoid the additional HTTP request:

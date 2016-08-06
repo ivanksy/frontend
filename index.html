@@ -15,7 +15,7 @@
     <meta content='2' data-name='image-counter'>
     <script src='js/vendor/modernizr-2.8.3.min.js'></script>
   </head>
-  <body class='background-color'>
+  <body class='background-color full-height full-width'>
     <!--[if lt IE 8]>
     <p class='browserupgrade'></p>
     Estás usando un navegador
@@ -25,61 +25,66 @@
     actualiza tu navegador
     para una mejor experiencia
     <![endif]-->
-    <div class='video-container relative'>
-      <video autoplay height='100%' loop poster='/img/banner.png'>
-        <source src='video/mp4/wor.mp4' typ='video/mp4'>
-        <source src='video/webm/wor.webm' typ='video/webm'>
-      </video>
-    </div>
-    <div class='fixed top navigation full-width right black' id='navigation'>
-      <div class='row middle-xs'>
-        <div class='col-md-2 left large-padding corner'>
-          <table>
-            <tr>
-              <td>
-                <a>
-                  <img src='/img/logo_navbar.png' width='65em'>
-                </a>
-              </td>
-              <th>
-                <a>
-                  <p class='miriam white-text'>Your Essay Written</p>
-                </a>
-              </th>
-            </tr>
-          </table>
-        </div>
-        <div class='col-md'>
-          <ul class='list-inline large-padding white-text align-right'>
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>About Us</a>
-            </li>
-            <li>
-              <a>F.A.Q.</a>
-            </li>
-            <li>
-              <a>Our Rates</a>
-            </li>
-            <li>
-              <a class='btn btn-primary btn-lg'>¡Order Now!</a>
-            </li>
-          </ul>
+    <div class='text-center full-height' id='banner'>
+      <div class='row right'>
+        <div class='col-md-12 col-lg-12 col-sm-12 col-xs-12 banner right' style='background-image:url(/img/banner.png)'></div>
+      </div>
+      <div id='banner-text'>
+        <div class='row middle-xs center-xs relative up top-banner'>
+          <div class='col-md-6 black-row'>
+            <h1 class='miriam white-text'>
+              <strong>Get your essay written overnight!</strong>
+            </h1>
+            <p class='margin-auto white-text miriam'>Native English-speaking writers are here to complete all your writing assignments: academic essays, term papers & theses and more...</p>
+            <a class='btn btn-warning bottom-space'>¡GET YOUR ESSAY WRITTEN!</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class='container'>
-      <div class='card white black-text text-center relative up'>
-        <h3 class='medium slim'>
-          Get your
-          <strong class='miriam medium'>Essay</strong>
-          written
-          <strong>overnight!</strong>
-          <p class='top-space'></p>
-          Native English-speaking writers are here to complete all your writing assignments: academic essays, term papers & theses and more...
-        </h3>
+    <div class='fixed top navigation full-width right up black'>
+      <div class='row middle-xs' id='navigation'>
+        <div class='col-md-2 left large-padding corner'>
+          <div class='box'>
+            <table>
+              <tr>
+                <td>
+                  <a>
+                    <img src='/img/logo_navbar.png' width='65em'>
+                  </a>
+                </td>
+                <th>
+                  <a>
+                    <p class='miriam white-text'>Your Essay Written</p>
+                  </a>
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class='col-md col-xs'>
+          <div class='box'>
+            <nav class='navigation text-right' id='responsive-nav'>
+              <i class='glyphicon glyphicon-menu-hamburger white-text title' id='menu-opener'></i>
+              <ul class='list-inline large-padding white-text align-right'>
+                <li>
+                  <a>Home</a>
+                </li>
+                <li>
+                  <a>About Us</a>
+                </li>
+                <li>
+                  <a>F.A.Q.</a>
+                </li>
+                <li>
+                  <a>Our Rates</a>
+                </li>
+                <li>
+                  <a class='btn btn-primary btn-lg' href='#contact'>¡Order Now!</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </div>
     <div id='gallery'>
@@ -95,9 +100,6 @@
           <div class='box'>
             <form action='https://formspree.io/ivan.nieto.lozada@gmail.com' id='contact-form' method='POST'>
               <div class='row center-xs'>
-                <div class='col-xs-2 col-md-1'>
-                  <div class='box'></div>
-                </div>
                 <div class='col-xs-5'>
                   <div class='box'>
                     <p class='miriam white-text'>

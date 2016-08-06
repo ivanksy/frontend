@@ -16,7 +16,7 @@
 		%link{rel:"stylesheet", href:"css/style.css"}
 		%meta{:"data-name" => "image-counter", content:"#{gallery_image.size - 1}"}
 		%script{src:"js/vendor/modernizr-2.8.3.min.js"}
-	%body.background-color
+	%body.background-color.full-height.full-width
 		="<!--[if lt IE 8]>"
 		%p{class:"browserupgrade"}
 		Estás usando un navegador
@@ -27,44 +27,46 @@
 		para una mejor experiencia
 		="<![endif]-->"
 		
-		.video-container.relative
-			%video{autoplay:true, loop:true,height:"100%",poster:"/img/banner.png"}
-				%source{src:"video/mp4/wor.mp4",typ:"video/mp4"}
-				%source{src:"video/webm/wor.webm",typ:"video/webm"}
-		
-		.fixed.top.navigation.full-width.right.black#navigation
-			.row.middle-xs
-				.col-md-2.left.large-padding.corner
-					%table
-						%tr
-							%td
-								%a
-									%img{src:"/img/logo_navbar.png", width:"65em"}
-							%th
-								%a
-									%p.miriam.white-text Your Essay Written
-				.col-md
-					%ul.list-inline.large-padding.white-text.align-right
-						%li
-							%a Home
-						%li
-							%a About Us
-						%li
-							%a F.A.Q.
-						%li
-							%a Our Rates
-						%li
-							%a.btn.btn-primary.btn-lg ¡Order Now!
+		.text-center.full-height#banner
+			.row.right
+				.col-md-12.col-lg-12.col-sm-12.col-xs-12.banner.right{style:"background-image:url(/img/banner.png)"}
 
-		.container
-			.card.white.black-text.text-center.relative.up
-				%h3.medium.slim
-					Get your
-					%strong.miriam.medium Essay
-					written 
-					%strong overnight!
-					%p.top-space
-					Native English-speaking writers are here to complete all your writing assignments: academic essays, term papers & theses and more...
+			#banner-text
+				.row.middle-xs.center-xs.relative.up.top-banner
+					.col-md-6.black-row
+						%h1.miriam.white-text 
+							%strong Get your essay written overnight!
+						%p.margin-auto.white-text.miriam Native English-speaking writers are here to complete all your writing assignments: academic essays, term papers & theses and more...
+						%a.btn.btn-warning.bottom-space ¡GET YOUR ESSAY WRITTEN!
+
+		.fixed.top.navigation.full-width.right.up.black
+			.row.middle-xs#navigation
+				.col-md-2.left.large-padding.corner
+					.box
+						%table
+							%tr
+								%td
+									%a
+										%img{src:"/img/logo_navbar.png", width:"65em"}
+								%th
+									%a
+										%p.miriam.white-text Your Essay Written
+				.col-md.col-xs
+					.box
+						%nav.navigation.text-right#responsive-nav
+							%i.glyphicon.glyphicon-menu-hamburger.white-text.title#menu-opener
+							%ul.list-inline.large-padding.white-text.align-right
+								%li
+									%a Home
+								%li
+									%a About Us
+								%li
+									%a F.A.Q.
+								%li
+									%a Our Rates
+								%li
+									%a.btn.btn-primary.btn-lg{href:"#contact"} ¡Order Now!
+						
 
 		#gallery
 			.inner
@@ -77,8 +79,6 @@
 					.box
 						%form{action:"https://formspree.io/ivan.nieto.lozada@gmail.com",method:"POST",id:"contact-form"}
 							.row.center-xs
-								.col-xs-2.col-md-1
-									.box
 								.col-xs-5
 									.box
 										%p.miriam.white-text
