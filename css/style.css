@@ -174,7 +174,8 @@ textarea {
 
 #gallery {
   margin: auto;
-  width: 800px;
+  height: 100%;
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -252,6 +253,10 @@ body {
 /*
  * Hide visually and from screen readers
  */
+.margin-0 {
+  margin: 0;
+}
+
 .margin-auto {
   margin: auto;
 }

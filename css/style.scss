@@ -182,7 +182,8 @@ textarea {
 }
 #gallery{
 	margin:auto;
-	width: 800px;
+	height:100%;
+	width: 100%;
 	overflow-x: hidden;
 	.inner{
 		white-space: nowrap; //se puede extender horizontalmente
@@ -256,6 +257,9 @@ body{
 /*
  * Hide visually and from screen readers
  */
+.margin-0{
+	margin: 0;
+}
 .margin-auto{
 	margin:auto;
 }
@@ -472,6 +476,7 @@ body{
 		}
 	}
 }
+
 @media print,
 			 (min-resolution: 1.25dppx),
 			 (min-resolution: 120dpi) {
