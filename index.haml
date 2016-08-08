@@ -1,22 +1,24 @@
 -gallery_image = ["slider_1","slider_2","slider_3"]
+-benefits = ["Our benefits", "100 Satisfaction", "100 Plagiarism-free", "100 Money Back Guarantee", "100 Confidential", "Seasoned Writers", "", "Writing from Scratch","Free Unlimited Revisions"]
 
 !!!5
 %html{class:"no-js", lang:"es"}
 	%head
 		%meta{charset:"utf-8"}
-		%title 24/7 Online Custom Essay Writing Service
+		%title#top 24/7 Online Custom Essay Writing Service
 		%meta{name:"description",content:"Essay Writing Service"}
-		%meta{name:"viewport",content:"width=device-width, initial-scale:1, maximum-scale:1"}
+		%meta{name:"viewport", content:"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"}
 		%link{rel:"shortcut icon",href:"img/favicon.ico"}
 		%link{href:'https://fonts.googleapis.com/css?family=Miriam+Libre:400,700', rel:'stylesheet', type:'text/css'}
 		%link{rel:"stylesheet",href:"css/bootstrap.css"}
 		%link{rel:"stylesheet", href:"css/bootstrap.min.css"}
 		%link{rel:"stylesheet", href:"css/normalize.css"}
 		%link{rel:"stylesheet", href:"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css"}
+		%script{src:"http://code.jquery.com/jquery-latest.js"}
 		%link{rel:"stylesheet", href:"css/style.css"}
 		%meta{:"data-name" => "image-counter", content:"#{gallery_image.size - 1}"}
 		%script{src:"js/vendor/modernizr-2.8.3.min.js"}
-	%body.background-color.full-height.full-width
+	%body.background-color
 		="<!--[if lt IE 8]>"
 		%p{class:"browserupgrade"}
 		Estás usando un navegador
@@ -28,10 +30,10 @@
 		="<![endif]-->"
 		
 		.text-center.full-height#banner
-			.row.right
+			.row.right.relative.margin-0
 				.col-md-12.col-lg-12.col-sm-12.col-xs-12.banner.right{style:"background-image:url(/img/banner.png)"}
 
-			#banner-text
+			.full-height#banner-text
 				.row.middle-xs.center-xs.relative.up.top-banner.margin-0
 					.col-md-6.black-row
 						%h1.miriam.white-text 
@@ -39,25 +41,25 @@
 						%p.margin-auto.white-text.miriam Native English-speaking writers are here to complete all your writing assignments: academic essays, term papers & theses and more...
 						%a.btn.btn-warning.bottom-space ¡GET YOUR ESSAY WRITTEN!
 
-		.fixed.top.navigation.full-width.right.up.black
+		.fixed.top.navigation.right.up.black
 			.row.middle-xs#navigation
-				.col-md-2.left.large-padding.corner
+				.col-md-2.left.large-padding.corner.first-xs
 					.box
 						%table
 							%tr
 								%td
-									%a
+									%a{href:"#contact"}
 										%img{src:"/img/logo_navbar.png", width:"65em"}
 								%th
-									%a
+									%a{href:"#contact"}
 										%p.miriam.white-text Your Essay Written
-				.col-md.col-xs
+				.col-md.col-xs.first-xs
 					.box
 						%nav.navigation.text-right#responsive-nav
-							%i.glyphicon.glyphicon-menu-hamburger.white-text.title#menu-opener
+							%span.glyphicon.glyphicon-menu-hamburger.glyphicon-remove.white-text.title#menu-opener
 							%ul.list-inline.large-padding.white-text.align-right
 								%li
-									%a Home
+									%a{href:"#top"} Home
 								%li
 									%a About Us
 								%li
@@ -66,7 +68,80 @@
 									%a Our Rates
 								%li
 									%a.btn.btn-primary.btn-lg{href:"#contact"} ¡Order Now!
-						
+		.relative#welcolme
+			.row
+				.col-md.col-xs
+					%h2.align-center
+						%strong Welcome to Your Essay Written 
+					%p.align-justify	
+						Welcome to YourEssayWritten.com, a professional paper writing service that provides a variety of essay writing services, including proofreading and editing, on all academic levels. If you are looking for a company that specializes in "write my essays" requests, you've come to the right place.
+
+						YourEssayWritten.com understands that things happen and you can't always write your own papers. Maybe you've taken on too many classes in one semester, or you just don't like writing but you have to turn in papers to pass a class. Whatever the reason, YourEssayWritten.com can help you with all of your essay writing needs. We don't just stop at essays, though. Our writers can handle research papers, speeches, dissertations and presentations on any academic level.				
+					
+					%h3.align-center
+						%strong Our Essay Writing Services
+					%p.align-justify
+						YourEssayWritten.com employs only the top, native English-speaking essay writers to ensure that you are 100 percent satisfied with the work delivered to you. Your satisfaction isn't the only thing 100 percent with our essay writing services, though; the content is also 100 percent original and unique so you can be sure you aren't just one in a million people asking for "write my essay" help and getting the same paper everyone else has gotten. All of the papers produced at YourEssayWritten.com are written from scratch and you, the client, are kept in the loop the entire time by being able to contact the writer throughout the entire essay writing process for whatever questions or concerns you may have. The company has a system to check each paper before it is sent to the client to ensure originality of work.
+					%h4.align-center 
+						%strong Can you write my essay? Sure!
+					%p.align-justify
+						If you have changes to your essay assignment, our writers can make those changes happen the moment they learn of them. The essay writers at YourEssayWritten.com are able to meet even the tightest deadlines because they are trained and professional in "write my paper" requests. They have years of experience that no other sites can boast, and they are committed to making you happy and your paper the best it can possibly be.				
+				.box
+					.col-md.col.xs
+						%ul.benefits.list-unstyled
+							%h2 Our benefits
+							%li
+								.glyphicon.glyphicon-ok 
+								%strong 100% 
+								Satisfaction
+							%li
+								.glyphicon.glyphicon-ok 
+								%strong 100% 
+								Plagiarism-free
+							%li
+								.glyphicon.glyphicon-ok 
+								%strong 100% 
+								Money Back Guarantee
+							%li
+								.glyphicon.glyphicon-ok 
+								%strong 100% 
+								Confidential
+							%li
+								.glyphicon.glyphicon-ok 
+								Seasoned Writers
+							%li
+								.glyphicon.glyphicon-ok
+								Juicy Discounts
+							%li
+								.glyphicon.glyphicon-ok
+								Writing from Scratch
+							%li
+								.glyphicon.glyphicon-ok 
+								Free Unlimited Revisions
+					.box
+						.col-md.col.xs
+							%ul.benefits#listilla
+								%h2 Our Services
+								%li
+									%a
+										Admission essay writing
+								%li
+									%a
+										Custom essay writing
+								%li
+									%a
+										School essay writing
+								%li
+									%a
+										Scholarship essay writing
+
+								%li
+									%a
+										Nurse essay writing
+								%li
+									%a
+										Homework Help
+								
 
 		#gallery
 			.inner
@@ -74,12 +149,12 @@
 					.image{style:"background-image:url(img/slider/#{image}.jpg);"}
 	
 		.black-row.white-text.full-height#contact
-			.row.middle-xs.full-height.margin-0
-				.col-xs-12
+			.row.middle-xs.margin-0
+				.col-xs-12.col-md
 					.box
 						%form{action:"https://formspree.io/ivan.nieto.lozada@gmail.com",method:"POST",id:"contact-form"}
 							.row.center-xs
-								.col-xs-5
+								.col-xs-11.col-sm-3
 									.box
 										%p.miriam.white-text
 											Contacto	

@@ -174,9 +174,8 @@ textarea {
 
 #gallery {
   margin: auto;
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
+  width: 600px;
+  overflow: hidden;
 }
 
 #gallery .inner {
@@ -190,14 +189,19 @@ textarea {
   display: inline-block;
   margin-right: -4px;
   margin-top: 0px;
-  height: 800px;
-  width: 800px;
+  height: 600px;
+  width: 600px;
   background-size: cover;
   background-position: center;
 }
 
 .top-banner {
-  top: 370px;
+  top: 50vh;
+}
+
+#banner {
+  height: 80%;
+  position: relative;
 }
 
 .banner {
@@ -215,10 +219,6 @@ textarea {
 
 #contact {
   margin-top: -100px;
-}
-
-#contact form {
-  margin: auto;
 }
 
 #contact .box p {
@@ -247,6 +247,32 @@ body {
   display: none;
 }
 
+#welcolme {
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+}
+
+.benefits {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 100px;
+}
+
+.benefits ul {
+  text-decoration: none;
+}
+
+#listilla li {
+  list-style: none;
+}
+
+#listilla a {
+  cursor: pointer;
+  color: #2678ef;
+}
+
 /* ==========================================================================
 	 Helper classes
 	 ========================================================================== */
@@ -261,7 +287,7 @@ body {
   margin: auto;
 }
 
-.medium, .navigation li a {
+.medium, .navigation li a, #listilla a {
   font-size: 1.3em;
 }
 
@@ -291,7 +317,8 @@ body {
 }
 
 .background-color {
-  background-color: #5698bf;
+  position: relative;
+  background-color: #fafafa;
 }
 
 .card {
@@ -337,6 +364,10 @@ body {
 
 .align-center {
   text-align: center;
+}
+
+.align-justify {
+  text-align: justify;
 }
 
 .fixed {
@@ -464,26 +495,65 @@ body {
 	 These examples override the primary ('mobile first') styles.
 	 Modify as content requires.
 	 ========================================================================== */
-@media only screen and (max-width: 960px) {
-  #navigation p {
-    font-size: 1.5em;
+@media only screen and (max-height: 600px) {
+  #contact {
+    padding: 10% 0%;
+    margin-top: 5%;
   }
-  #menu-opener {
-    display: block;
-    margin-right: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  #welcolme {
+    padding-top: 45%;
   }
   #responsive-nav ul {
+    top: 90px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #contact {
+    padding: auto;
+    font-size: 1em;
+  }
+  #gallery {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  #gallery .image {
+    transform: translate(-10%, 5%);
+  }
+  #navigation img {
+    margin: none;
+  }
+  #navigation p {
+    margin: none;
+    position: absolute;
+    font-size: 1.2em;
+  }
+  #menu-opener {
+    position: absolute;
+    display: block;
+    margin-right: 10px;
+    margin-top: 20px;
+    right: 0px;
+  }
+  #responsive-nav ul {
+    padding: 0;
+    margin: 0;
     position: absolute;
     width: 100%;
     font-size: 1.5em;
-    top: 95px;
+    top: 80px;
     background-color: #222;
     left: 0px;
+    right: 0px;
     text-align: center;
-    display: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.4s;
   }
   #responsive-nav ul.active {
-    display: block;
     max-height: 80vh;
   }
   #responsive-nav ul li {
