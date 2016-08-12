@@ -157,12 +157,38 @@
 									.box
 										%p.miriam.white-text
 											Contacto	
-										%input.step{type:"text",name:"name",placeholder: "Nombre", class:"input", required: true}
-										%input.step{type:"email",name:"email",placeholder: "Correo", class:"input", required: true}
-										%textarea.step{name:"body",placeholder:"Escribe tu mensaje", class:"input", required: true}
-										%button.black-text{type:"submit",class:"btn"} Enviar
+										%input.step{type:"text",name:"name",placeholder: "Name", class:"input", required: true}
+										%input.step{type:"email",name:"email",placeholder: "E-mail", class:"input", required: true}
+										%textarea.step{name:"body",placeholder:"Write Us", class:"input", required: true}
+										%button.black-text{type:"submit",class:"btn"} Done
 
-	
+	%footer
+		.footer-widget-section.black-row
+			.row
+				.col-sm-4.footer-block
+					%p.white-text 
+						Hola
+				.col-sm-4.footer-block
+					%p.white-text 
+						Hola
+				.col-sm-4.footer-block
+					%p.white-text 
+						Hola
+
+		.footer-copyright
+			%nav.navigation.text-right
+				%ul.list-inline.large-padding.white-text.align-right
+					%li
+						%a{href:"#top"} Home
+					%li
+						%a About Us
+					%li
+						%a F.A.Q.
+					%li
+						%a Our Rates
+					%li
+						%a.btn.btn-primary.btn-lg{href:"#contact"} ¡Order Now!
+
 	%script{src:"https://code.jquery.com/jquery-3.1.0.min.js", integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}
 	:javascript
 		window.jQuery || document.write("<script src='/js/vendor/jquery-1.12.0.min.js'><\/script>");
