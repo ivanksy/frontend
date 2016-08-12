@@ -200,11 +200,13 @@ textarea {
 }
 
 #banner {
+  background-color: rgba(68, 38, 81, 0.5);
   height: 80%;
   position: relative;
 }
 
 .banner {
+  opacity: 0.85;
   position: absolute;
   height: 512px;
   background-size: cover;
