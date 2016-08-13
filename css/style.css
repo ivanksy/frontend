@@ -279,6 +279,32 @@ body {
   border-right: 1px solid #3a3a3a;
 }
 
+#contact-footer h5 {
+  padding-top: 20px;
+}
+
+#contact-footer ul {
+  padding: 10px;
+}
+
+#contact-footer p {
+  color: #6b6b6b;
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.footer-links {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  color: white;
+  background-color: #4a4a4a;
+  line-height: 42px;
+  line-width: 42px;
+  border-radius: 50%;
+}
+
 /* ==========================================================================
 	 Helper classes
 	 ========================================================================== */
@@ -314,7 +340,7 @@ body {
 }
 
 .subtitle {
-  font-size: 1em;
+  font-size: 16px;
 }
 
 .name-page {
@@ -337,6 +363,14 @@ body {
 
 .black-row {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.black-row-2 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.black-row-3 {
+  background-color: black;
 }
 
 .black {

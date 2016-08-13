@@ -14,6 +14,7 @@
 		%link{rel:"stylesheet", href:"css/bootstrap.min.css"}
 		%link{rel:"stylesheet", href:"css/normalize.css"}
 		%link{rel:"stylesheet", href:"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css"}
+		%link{rel:"stylesheet", href:"http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"}
 		%script{src:"http://code.jquery.com/jquery-latest.js"}
 		%link{rel:"stylesheet", href:"css/style.css"}
 		%meta{:"data-name" => "image-counter", content:"#{gallery_image.size - 1}"}
@@ -162,8 +163,8 @@
 										%textarea.step{name:"body",placeholder:"Write Us", class:"input", required: true}
 										%button.black-text{type:"submit",class:"btn"} Done
 
-	%footer
-		.footer-widget-section.black-row
+	%footer.relative
+		.footer-widget-section.black-row-2.text-center.full-width
 			.row
 				.col-sm-4.footer-block
 					%p.white-text 
@@ -171,23 +172,43 @@
 				.col-sm-4.footer-block
 					%p.white-text 
 						Hola
-				.col-sm-4.footer-block
-					%p.white-text 
-						Hola
+				.col-sm-4#contact-footer
+					%h5.white-text.subtitle  Contact Us Today
+					%p.align-center.white-text
+						Call Us 666 777 888 OR 111 222 333
+						Send an Email on contact@domain.com
+						Visit Us 123 Fake Street- Blla 12358
+						Fake Kingdom
+					%ul.list-inline.medium.white-text
+						%li
+							%i.fa.fa-facebook.footer-links							
+						%li
+							%i.fa.fa-twitter.footer-links
+						%li
+							%i.fa.fa-skype.footer-links
+						%li
+							%i.fa.fa-whatsapp.footer-links
 
-		.footer-copyright
-			%nav.navigation.text-right
-				%ul.list-inline.large-padding.white-text.align-right
-					%li
-						%a{href:"#top"} Home
-					%li
-						%a About Us
-					%li
-						%a F.A.Q.
-					%li
-						%a Our Rates
-					%li
-						%a.btn.btn-primary.btn-lg{href:"#contact"} ¡Order Now!
+		.footer-copyright.black-row-3
+			.row.middle-xs
+				.col-md-6
+					.box
+						%p.medium2.white-text
+							© 2013-2016 MyEssayWritten.com - All Rights Reserved. Professional Essay Writing Service.
+				.col-md-6
+					.box
+						%nav
+							%ul.list-inline.white-text.align-right
+								%li
+									%a{href:"#top"} Home
+								%li
+									%a About Us
+								%li
+									%a F.A.Q.
+								%li
+									%a Our Rates
+								%li
+									%a{href:"#contact"} ¡Order Now!
 
 	%script{src:"https://code.jquery.com/jquery-3.1.0.min.js", integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}
 	:javascript
