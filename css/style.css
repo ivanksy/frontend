@@ -279,15 +279,15 @@ body {
   border-right: 1px solid #3a3a3a;
 }
 
-#contact-footer h5 {
+#contact-footer h5, #footer-description h5 {
   padding-top: 20px;
 }
 
-#contact-footer ul {
+#contact-footer ul, #footer-description ul {
   padding: 10px;
 }
 
-#contact-footer p {
+#contact-footer p, #footer-description p {
   color: #6b6b6b;
   padding-top: 20px;
   padding-right: 100px;
@@ -303,6 +303,38 @@ body {
   line-height: 42px;
   line-width: 42px;
   border-radius: 50%;
+}
+
+#footer-logo {
+  padding-top: 1%;
+  width: 100%;
+}
+
+#footer-logo .ph {
+  color: #6b6b6b;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+#footer-logo table {
+  width: 100%;
+  text-align: center;
+}
+
+#footer-logo table img {
+  padding-bottom: 2%;
+}
+
+#footer-logo table p {
+  margin-right: 0;
+}
+
+#footer-logo table th {
+  text-align: center;
+}
+
+#footer-logo table a {
+  text-decoration: none;
 }
 
 /* ==========================================================================

@@ -165,14 +165,26 @@
 
 	%footer.relative
 		.footer-widget-section.black-row-2.text-center.full-width
-			.row
-				.col-sm-4.footer-block
-					%p.white-text 
-						Hola
-				.col-sm-4.footer-block
-					%p.white-text 
-						Hola
-				.col-sm-4#contact-footer
+			.row.margin-0
+				.col-sm-4.col-xs.footer-block.corner#footer-logo
+					%table
+						%tr
+							%td
+								%a{href:"#"}
+									%img{src:"/img/logo.png", width:"50em"}
+						%tr		
+							%th
+								%a{href:"#"}
+									%p.miriam.white-text Your Essay Written
+					%p.align-center.white-text.ph
+						Continually matrix cross functional opportunities whereas ethical information. Compellingly streamline enabled human capital before resource-leveling internal or "organic".
+				.col-sm-4.col-xs.footer-block#footer-description
+					%h5.white-text.subtitle 
+						We Work For 
+						%strong.white-text.subtitle You
+					%p.align-center.white-text
+						Distinctively expedite viral materials rather than out-of-the-box solutions. Credibly empower revolutionary ROI rather than unique products. Collaboratively maximize principle-centered ideas before highly efficient data. Phosfluorescently.
+				.col-sm-4.col-xs#contact-footer
 					%h5.white-text.subtitle  Contact Us Today
 					%p.align-center.white-text
 						Call Us 666 777 888 OR 111 222 333
@@ -190,7 +202,7 @@
 							%i.fa.fa-whatsapp.footer-links
 
 		.footer-copyright.black-row-3
-			.row.middle-xs
+			.row.middle-xs.margin-0
 				.col-md-6
 					.box
 						%p.medium2.white-text

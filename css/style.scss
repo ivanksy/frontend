@@ -303,6 +303,35 @@ body{
     line-width: 42px;
     border-radius: 50%;
 }
+#footer-logo{
+	padding-top: 1%;
+	width: 100%;
+	.ph{
+		color: #6b6b6b;
+		padding-right: 100px;
+		padding-left: 100px;
+	}
+	table{
+		width: 100%;
+		text-align: center;
+		img{
+			padding-bottom:2%;
+		}
+		p{	
+			margin-right:0;
+		}
+		th{
+			text-align: center;
+		}
+		a{
+
+			text-decoration: none;
+		}
+	}
+}
+#footer-description{
+	@extend #contact-footer;
+}
 /* ==========================================================================
 	 Helper classes
 	 ========================================================================== */
