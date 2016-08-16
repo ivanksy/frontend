@@ -205,13 +205,11 @@ textarea {
 	top:50vh;
 }
 #banner{
-
 	background-color: rgba(68, 38, 81, 0.5);
 	height: 80%;
 	position:relative;
 }
 .banner{
-
 	opacity:0.85;
 	position: absolute;
 	height: 512px;
@@ -252,6 +250,14 @@ body{
 
 #menu-opener{
 	display: none;
+}
+#banner-90{
+	display: none;
+}
+#banner-text{
+	top: 80%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 #welcolme{
 	padding-top: 10%;
@@ -332,6 +338,26 @@ body{
 #footer-description{
 	@extend #contact-footer;
 }
+#footer-nav{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	ul{
+		margin-bottom: 0px;
+	}
+	li{
+		a{
+			padding: 5px 10px;
+			color: white;
+			cursor: pointer;
+			&:hover{
+				text-decoration: none;
+				background-color:rgba(255,255,255,0.0);
+			}
+		}
+	}
+}
+
+
 /* ==========================================================================
 	 Helper classes
 	 ========================================================================== */
@@ -554,6 +580,27 @@ body{
 	}
 }
 @media only screen and (max-width: 960px){
+	#banner-90{
+		height: 100%;
+		display: block;
+	}
+	#banner-text{
+		width: 90%;
+		font-size: 0.7em;
+		h1{
+			padding-top: 10px;
+		}
+		p{
+			text-align: none;
+			padding-bottom: 5px;
+		} 
+		a{
+			font-size: 0.7em;
+		}
+	}
+	#banner{
+		display: none;
+	}
 	#contact{
 		padding: auto;
 		font-size: 1em;
@@ -590,7 +637,7 @@ body{
 			margin: 0;
 			position: absolute;
 			width: 100%;
-			font-size: 1.5em;
+			font-size: 1.2em;
 			top: 80px;
 			background-color:#222;
 			left: 0px;

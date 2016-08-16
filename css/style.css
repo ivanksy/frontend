@@ -249,6 +249,16 @@ body {
   display: none;
 }
 
+#banner-90 {
+  display: none;
+}
+
+#banner-text {
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #welcolme {
   padding-top: 10%;
   padding-right: 10%;
@@ -335,6 +345,26 @@ body {
 
 #footer-logo table a {
   text-decoration: none;
+}
+
+#footer-nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#footer-nav ul {
+  margin-bottom: 0px;
+}
+
+#footer-nav li a {
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+#footer-nav li a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 /* ==========================================================================
@@ -584,6 +614,27 @@ body {
 }
 
 @media only screen and (max-width: 960px) {
+  #banner-90 {
+    height: 100%;
+    display: block;
+  }
+  #banner-text {
+    width: 90%;
+    font-size: 0.7em;
+  }
+  #banner-text h1 {
+    padding-top: 10px;
+  }
+  #banner-text p {
+    text-align: none;
+    padding-bottom: 5px;
+  }
+  #banner-text a {
+    font-size: 0.7em;
+  }
+  #banner {
+    display: none;
+  }
   #contact {
     padding: auto;
     font-size: 1em;
@@ -615,7 +666,7 @@ body {
     margin: 0;
     position: absolute;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     top: 80px;
     background-color: #222;
     left: 0px;
