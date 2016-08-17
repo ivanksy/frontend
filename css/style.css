@@ -220,7 +220,7 @@ textarea {
 }
 
 #contact {
-  margin-top: -100px;
+  padding: 10px 10px;
 }
 
 #contact .box p {
@@ -260,9 +260,8 @@ body {
 }
 
 #welcolme {
-  padding-top: 10%;
+  padding-top: 3%;
   padding-right: 10%;
-  padding-bottom: 10%;
   padding-left: 10%;
 }
 
@@ -398,7 +397,7 @@ body {
 }
 
 .title {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .subtitle {
@@ -600,20 +599,43 @@ body {
 @media only screen and (max-height: 600px) {
   #contact {
     padding: 10% 0%;
-    margin-top: 5%;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  #welcolme {
-    padding-top: 45%;
-  }
   #responsive-nav ul {
     top: 90px;
   }
 }
 
 @media only screen and (max-width: 960px) {
+  #welcolme {
+    padding-top: 0px;
+  }
+  .benefits {
+    padding-bottom: 0px;
+  }
+  #cirles-links li {
+    padding: 5px;
+  }
+  #footer-widget-section img {
+    padding: 10px 0px;
+  }
+  #footer-widget-section #footer-logo p {
+    padding: 0px;
+  }
+  #footer-widget-section p {
+    padding: 0px;
+  }
+  #footer-copyright {
+    text-align: center;
+  }
+  #footer-copyright p {
+    padding-top: 5px;
+  }
+  #footer-nav ul {
+    text-align: center;
+  }
   #banner-90 {
     height: 100%;
     display: block;
@@ -645,6 +667,12 @@ body {
   }
   #gallery .image {
     transform: translate(-10%, 5%);
+  }
+  #navigation {
+    top: 0%;
+  }
+  #navigation table p {
+    top: 45%;
   }
   #navigation img {
     margin: none;

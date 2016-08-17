@@ -224,7 +224,7 @@ textarea {
 	}
 }
 #contact{
-	margin-top: -100px;
+	padding: 10px 10px;
 	.box{
 		p{
 			font-size: 2em;
@@ -260,9 +260,8 @@ body{
 	transform: translate(-50%, -50%);
 }
 #welcolme{
-	padding-top: 10%;
+	padding-top:3%;
     padding-right: 10%;
-    padding-bottom: 10%;
     padding-left: 10%;
 }
 .benefits{
@@ -385,7 +384,7 @@ body{
 		font-family: 'Miriam Libre', sans-serif;
 }
 .title{
-	font-size: 3em;
+	font-size: 2.5em;
 }
 .subtitle{
 	font-size: 16px;	
@@ -566,13 +565,9 @@ body{
 @media only screen and (max-height: 600px) {
 	#contact{
 		padding: 10% 0%;
-		margin-top: 5%;
 	}
 }
 @media only screen and (max-width: 500px){
-	#welcolme{
-	padding-top:45%;
-}
 	#responsive-nav{
 		ul{
 			top: 90px;
@@ -580,6 +575,44 @@ body{
 	}
 }
 @media only screen and (max-width: 960px){
+	#welcolme{
+		padding-top:0px;
+	}
+	.benefits{
+		padding-bottom: 0px;
+	}
+	#cirles-links{
+		li{
+			padding: 5px;
+		}
+	}
+	
+	#footer-widget-section{
+		img{
+			padding: 10px 0px;
+
+		}
+		#footer-logo{
+			p{
+				padding: 0px;
+			}
+		}
+		p{
+			padding: 0px;
+		}
+	}
+	#footer-copyright{
+		p{
+			padding-top: 5px;
+		}
+		text-align: center;
+	}
+	#footer-nav{
+		ul{
+			text-align: center;
+		}
+	}
+
 	#banner-90{
 		height: 100%;
 		display: block;
@@ -614,6 +647,12 @@ body{
 	}
 
 	#navigation{
+		top: 0%;
+		table{
+			p{
+			top: 45%;
+		}
+	}
 		img{
 			margin: none;
 		}

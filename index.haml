@@ -40,9 +40,9 @@
 					%p.margin-auto.white-text.miriam Native English-speaking writers are here to complete all your writing assignments: academic essays, term papers & theses and more...
 					%a.btn.btn-warning.bottom-space ¡GET YOUR ESSAY WRITTEN!
 
-		.text-center.full-height#banner
-			.row.right.relative.margin-0
-				.col-md-12.col-lg-12.col-sm-12.col-xs-12.banner.right{style:"background-image:url(/img/banner.png)"}
+		.text-center#banner
+			.row.right.relative.full-height.margin-0
+				.col-md-12.col-lg-12.col-sm-12.col-xs-12.banner.right.full-height{style:"background-image:url(/img/banner.png)"}
 
 			.absolute.right.bottom#banner-text
 				.col-md-12.black-row
@@ -51,17 +51,17 @@
 					%p.margin-auto.white-text.miriam Native English-speaking writers are here to complete all your writing assignments: academic essays, term papers & theses and more...
 					%a.btn.btn-warning.bottom-space ¡GET YOUR ESSAY WRITTEN!
 
-		.fixed.top.navigation.right.up.black
-			.row.middle-xs#navigation
+		.fixed.top.navigation.right.up.black#navigation
+			.row.middle-xs
 				.col-md-2.left.large-padding.corner.first-xs
 					.box
 						%table
 							%tr
 								%td
-									%a{href:"#contact"}
+									%a
 										%img{src:"/img/logo_navbar.png", width:"65em"}
 								%th
-									%a{href:"#contact"}
+									%a
 										%p.miriam.white-text Your Essay Written
 				.col-md.col-xs.first-xs
 					.box
@@ -98,7 +98,7 @@
 						%p.align-justify
 							If you have changes to your essay assignment, our writers can make those changes happen the moment they learn of them. The essay writers at YourEssayWritten.com are able to meet even the tightest deadlines because they are trained and professional in "write my paper" requests. They have years of experience that no other sites can boast, and they are committed to making you happy and your paper the best it can possibly be.				
 					.box
-						.col-md.col.xs
+						.col-md.col.xs-6
 							%ul.benefits.list-unstyled
 								%h2 Our benefits
 								%li
@@ -130,7 +130,7 @@
 									.glyphicon.glyphicon-ok 
 									Free Unlimited Revisions
 						.box
-							.col-md.col.xs
+							.col-md.col.xs-6
 								%ul.benefits#listilla
 									%h2 Our Services
 									%li
@@ -175,9 +175,9 @@
 											%button.black-text{type:"submit",class:"btn"} Done
 
 		%footer.relative
-			.footer-widget-section.black-row-2.text-center.full-width
+			.black-row-2.text-center.full-width#footer-widget-section
 				.row.margin-0
-					.col-sm-4.col-xs.footer-block.corner#footer-logo
+					.col-sm-4.col-xs-12.footer-block.corner#footer-logo
 						%table
 							%tr
 								%td
@@ -189,20 +189,21 @@
 										%p.miriam.white-text Your Essay Written
 						%p.align-center.white-text.ph
 							Continually matrix cross functional opportunities whereas ethical information. Compellingly streamline enabled human capital before resource-leveling internal or "organic".
-					.col-sm-4.col-xs.footer-block#footer-description
+					.col-sm-4.col-xs-6.footer-block#footer-description
 						%h5.white-text.subtitle
 							We Work For 
 							%strong.white-text.subtitle You
 						%p.align-center.white-text
-							Distinctively expedite viral materials rather than out-of-the-box solutions. Credibly empower revolutionary ROI rather than unique products. Collaboratively maximize principle-centered ideas before highly efficient data. Phosfluorescently.
-					.col-sm-4.col-xs#contact-footer
+							Distinctively expedite viral materials rather than out-of-the-box solutions. Credibly empower revolutionary ROI rather than unique products. Collaboratively maximize principle-centered ideas before highly efficient data. Phos-
+							fluorescently.
+					.col-sm-4.col-xs-6#contact-footer
 						%h5.white-text.subtitle  Contact Us Today
 						%p.align-center.white-text
 							Call Us 666 777 888 OR 111 222 333
-							Send an Email on contact@domain.com
-							Visit Us 123 Fake Street- Blla 12358
+							Send an Email on contact
+							@domain.com Visit Us 123 Fake Street- Blla 12358
 							Fake Kingdom
-						%ul.list-inline.medium.white-text
+						%ul.list-inline.medium.white-text#cirles-links
 							%li
 								%i.fa.fa-facebook.footer-links							
 							%li
@@ -212,13 +213,13 @@
 							%li
 								%i.fa.fa-whatsapp.footer-links
 
-			.footer-copyright.black-row-3
+			.black-row-3
 				.row.middle-xs.margin-0
-					.col-md-6
+					.col-md-6.col-xs-12#footer-copyright
 						.box
 							%p.medium2.white-text
-								© 2013-2016 MyEssayWritten.com - All Rights Reserved. Professional Essay Writing Service.
-					.col-md-6
+								© 2013-2016 YourEssayWritten.com - All Rights Reserved. Professional Essay Writing Service.
+					.col-md-6.col-xs-12
 						.box
 							%nav#footer-nav
 								%ul.list-inline.white-text.align-right
@@ -231,7 +232,8 @@
 									%li
 										%a Our Rates
 									%li
-										%a{href:"#contact"} ¡Order Now!
+										%a{href:"#contact"} 
+											%strong ¡Order Now!
 
 	%script{src:"https://code.jquery.com/jquery-3.1.0.min.js", integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}
 	:javascript
